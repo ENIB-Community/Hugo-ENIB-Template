@@ -1,5 +1,7 @@
 # Hugo ENIB Template
 
+* Demo: 
+
 # Build the Site Locally
 
 To build and test the site locally on your machine, you need to have Hugo installed. If you don't have Hugo installed, please refer to the official Hugo documentation for installation instructions (https://gohugo.io/getting-started/).
@@ -9,8 +11,8 @@ To build and test the site locally on your machine, you need to have Hugo instal
 1. Clone the Repository. First, clone this repository (or your fork of it) to your local machine:
 
 ```
-git clone https://github.com/[YourUsername]/[RepoName].git
-cd [RepoName]
+git clone https://github.com/vincentchoqueuse/Hugo-ENIB-template.git
+cd Hugo-ENIB-template
 ```
 
 2. Run Hugo Server. Navigate to the root directory of the repository and start the Hugo server:
@@ -46,7 +48,7 @@ This theme supports automatic deployment using GitHub Pages and GitHub Actions. 
     * Scroll down to the "GitHub Pages" section.
     * Select the source branch (commonly gh-pages) and folder (/root or /docs) where your site will be published from.
 
-2. Use GitHub Actions Workflow. The Hugo site's repository contains a directory named .github, and within it, another directory named workflows. This directory contains a YAML file (e.g., main.yml) for the GitHub Action workflow. 
+2. Use GitHub Actions Workflow. The Hugo site's repository contains a directory named .github, and within it, another directory named workflows. This directory contains a YAML file for the GitHub Action workflow. 
 
 Commit and Push the Workflow File
 Commit and push these changes to your repository. This action will trigger the workflow and deploy your site to 
