@@ -2,7 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 author = "Vincent Choqueuse"
-theme = 'enib'
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"  # You can choose other styles
 
