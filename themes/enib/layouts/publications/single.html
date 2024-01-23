@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{ if  .Params.Image }}
+<div class="hero-accueil flex relative">
+  <div class="img--fond absolute-full w100 zi-1 grayScale">
+    <img src="{{ .Params.Image }}" alt="Description">
+  </div>
+  <div class="cache zi-1"></div>
+    <div class="contenu f-asc lg-w90">
+        <div class="lg-w60">
+            <div class="etiquette"><span class="">Research</span></div>
+            <div class="font-alt sm-fs3 lg-fs6 txt-blanc fw8">{{ .Title }}</div>
+            <div class="mt1 txt-base txt-blanc">
+                <p style="text-align: left;">
+                  {{ .Description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+  <div class="contenu lg-w90 contenu-custom">
+    <div class="my1">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" >
+            <a href="{{ .Site.BaseURL }}">
+              <span itemprop="name">Home</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">
+              <span itemprop="name">Publication List</span></a>
+            <meta itemprop="position" content="2">
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+        <p>{{ .Content }}</p>
+      </div>
+    </article>
+  </div>
+{{ end }}

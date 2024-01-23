@@ -1,0 +1,31 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      {{ if $featured_image }}
+          {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+        <div class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3-ns" "pr3-ns" }} mb4 mb0-ns w-100 w-40-ns">
+          <a href="{{.RelPermalink}}" class="db grow">
+            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+          </a>
+        </div>
+      {{ end }}
+      <div class="blah w-100{{ if $featured_image }} w-60-ns {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr3-ns" "pl3-ns" }}{{ end }}">
+        <h3 class="f3 fw1 athelas mt1 mb1 lh-title">
+          {{ .Title }}
+        </h3>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          <p>
+            {{ .Summary }}
+          </p>
+        </div>
+        <div class="btn--start mt1">
+          <a href="{{.RelPermalink}}" class="cta--trans--pictoRose"><span>{{ $.Param "read_more_copy" | default (i18n "readMore") }}</span> <svg xmlns="http://www.w3.org/2000/svg" width="7.02" height="12.391" viewBox="0 0 7.02 12.391"><path d="M254.817,118.206a1.032,1.032,0,0,0,.284.678l4.956,5.162a1.034,1.034,0,1,0,1.491-1.433l-4.265-4.446,4.265-4.446a1.034,1.034,0,1,0-1.491-1.433l-4.956,5.162a1.032,1.032,0,0,0-.284.755Z" transform="translate(261.835 124.363) rotate(180)" fill="#90d1df"></path></svg></a>
+        </div>
+
+        {{/* TODO: add author
+        <p class="f6 lh-copy mv0">By {{ .Author }}</p> */}}
+      </div>
+    </div>
+  </div>
+</article>

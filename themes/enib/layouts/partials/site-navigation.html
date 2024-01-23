@@ -1,0 +1,14 @@
+<nav id="menu" class="nav-main" role="navigation">
+      {{ if .Site.Menus.main }}
+        <ul id="menu-principal">
+          {{ range .Site.Menus.main }}
+          <li class="nav-main-item menu-item">
+            <a class="nav-main-link" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+</nav>
+

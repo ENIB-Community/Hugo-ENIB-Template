@@ -1,0 +1,46 @@
+.txt-blanc {
+    color: white;
+    }
+.fw8 {
+font-weight: 800;
+}
+@media (max-width: 1024px)
+.sm-fs3 {
+font-size: var(--fs-3);
+}
+.font-alt {
+font-family: var(--font-alt);
+}
+body div, body a {
+box-sizing: border-box;
+}
+
+.contenu-custom{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.page-template{
+    padding-top: 0px;
+}
+
+.ba{
+    padding: 20px;
+}
+
+h1{
+    padding-bottom: 20px;
+}
+
+h2{
+    padding-bottom: 10px;
+    color: var(--col2)
+}
+
+.readmore{
+    color: rgb(136, 136, 136);
+}
+
+label{
+    font-weight: bold;
+}

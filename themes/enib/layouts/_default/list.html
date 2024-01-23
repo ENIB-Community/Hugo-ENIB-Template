@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="contenu lg-w90 contenu-custom">
+    <div class="my1">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" >
+            <a href="{{ .Site.BaseURL }}">
+              <span itemprop="name">Home</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">
+              <span itemprop="name">{{ .CurrentSection.Title }}</span></a>
+            <meta itemprop="position" content="2">
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+      {{- .Content -}}
+    </section>
+
+    {{with .CurrentSection.Title }}<h1 class="">{{ . }}</h1>{{end}}
+
+    <h2>List of {{ .CurrentSection.Title }} ({{ len .Paginator.Pages }}) </h2>
+
+    <section class="flex-ns flex-wrap justify-around mt2">
+      {{ range .Paginator.Pages }}
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    </section>
+    {{- template "_internal/pagination.html" . -}}
+  </article>
+</div>
+{{ end }}
