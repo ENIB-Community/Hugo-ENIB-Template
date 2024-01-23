@@ -1,0 +1,40 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+author = "Vincent Choqueuse"
+theme = 'enib'
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"  # You can choose other styles
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+title = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+title = "Visit our projects"
+url = "/projects/"
+weight = 3
+
+[[menu.main]]
+identifier = "publication"
+name = "Publications"
+title = "Visit our posts"
+url = "/publications/"
+weight = 4
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+title = "About"
+url = "/about/"
+weight = 5
+
+[params]
+  backgroundImage = "/images/index.jpeg"
+  
+
