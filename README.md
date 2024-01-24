@@ -1,6 +1,6 @@
 # Hugo ENIB Template
 
-* Demo: 
+* Demo: https://vincentchoqueuse.github.io/Hugo-ENIB-Template/
 
 # Build the Site Locally
 
