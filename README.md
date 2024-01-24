@@ -45,15 +45,14 @@ This theme supports automatic deployment using GitHub Pages and GitHub Actions. 
 
 1. Enable GitHub Pages on Your Repository
     * Go to your repository's settings.
-    * Scroll down to the "GitHub Pages" section.
-    * Select the source branch (commonly gh-pages) and folder (/root or /docs) where your site will be published from.
+    * Go to the settings tab > sidebar Pages
+    * In Build and deployment, select github actions
 
 2. Use GitHub Actions Workflow. The Hugo site's repository contains a directory named .github, and within it, another directory named workflows. This directory contains a YAML file for the GitHub Action workflow. 
 
-Commit and Push the Workflow File
-Commit and push these changes to your repository. This action will trigger the workflow and deploy your site to 
+3. In the hugo folder, open the file hugo.toml and change the setting `baseURL`to the name of your repo (ex: https://vincentchoqueuse.github.io/Hugo-ENIB-Template/)
 
-3. Push your website on github. Each push will install Hugo, build your site, and deploy the public directory to the gh-pages branch.
+4. Push your website on github. Each push will install Hugo, build your site, and deploy the public directory to the gh-pages branch.
 
 Once the workflow successfully completes, your site will be accessible at https://[username].github.io/[repository-name]/.
 
