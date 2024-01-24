@@ -3,7 +3,7 @@
 {{ if  .Params.Image }}
 <div class="hero-accueil flex relative">
   <div class="img--fond absolute-full w100 zi-1 grayScale">
-    <img src="{{ .Params.Image }}" alt="Description">
+    <img src="{{ .Params.Image|relURL }}" alt="Description">
   </div>
   <div class="cache zi-1"></div>
     <div class="contenu f-asc lg-w90">
