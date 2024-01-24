@@ -2,7 +2,7 @@
 title = 'Publications'
 date = 2023-11-11T03:08:47+01:00
 draft = false
-image = "/images/publication.jpeg"
+image = "images/publication.jpeg"
 type = 'publications'
 description = "This page presents a comprehensive list of my publications, showcasing my contributions to various fields such as smart grid technology, blind MIMO (Multiple Input, Multiple Output) recognition, system monitoring, and advancements in optical systems. The publications reflect my research and expertise in these areas, offering insights and developments that have been influential in the evolution of these technologies."
 +++
