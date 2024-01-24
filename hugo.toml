@@ -1,5 +1,4 @@
 baseURL = "https://vincentchoqueuse.github.io/Hugo-ENIB-Template/"
-relativeURLs = true
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 author = "Vincent Choqueuse"
