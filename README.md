@@ -1,6 +1,6 @@
 # Hugo ENIB Template
 
-* Demo: https://vincentchoqueuse.github.io/Hugo-ENIB-Template/
+* [Demo](https://enib-community.github.io/Hugo-ENIB-Template/)
 
 # Build the Site Locally
 
@@ -11,7 +11,7 @@ To build and test the site locally on your machine, you need to have Hugo instal
 1. Clone the Repository. First, clone this repository (or your fork of it) to your local machine:
 
 ```
-git clone https://github.com/vincentchoqueuse/Hugo-ENIB-template.git
+git clone https://github.com/ENIB-Community/Hugo-ENIB-Template.git
 cd Hugo-ENIB-template
 ```
 
